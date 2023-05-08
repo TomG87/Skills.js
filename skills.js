@@ -69,12 +69,24 @@ while (i < 100) {
   }
 }
 
-printEveryOtherNumber();
+// printEveryOtherNumber();
 
 
 // # Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
 
+function countToFiftyFive() {
+  var numbers = [1, 55, 3, 55, 8, 10, 55];
+  var count = 0;
 
+  numbers.forEach(function(number) {
+    if (number === 55) {
+      count += 1;
+    }
+  });
+  console.log(count);
+}
+
+countToFiftyFive();
 // # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
