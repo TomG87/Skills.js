@@ -253,7 +253,7 @@ function factorial(number) {
   return result;
 }
 
-console.log(factorial(5));
+// console.log(factorial(5));
 
 
 
@@ -269,4 +269,19 @@ console.log(factorial(5));
 //   result
 // end
 // p descending([1, 3, 5, 7])
+
+function descendingNumbers(numbers) {
+
+  var result = [];
+  var i = numbers.length - 1;
+
+  while (i >= 0) {
+    result.push(numbers[i]);
+    i--;
+  }
+  return result;
+}
+
+console.log(descendingNumbers([1, 3, 5, 7]));
+
 
