@@ -86,9 +86,24 @@ function countToFiftyFive() {
   console.log(count);
 }
 
-countToFiftyFive();
+// countToFiftyFive();
 // # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
+
+function awesomeSauce() {
+
+  var letters = ["a", "b", "c", "d", "e"];
+  var newArray = [];
+
+  letters.forEach(function(letter) {
+    newArray.push(letter);
+    newArray.push("Awesomesauce");
+  });
+
+  console.log(newArray);
+}
+
+awesomeSauce();
 
 
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
