@@ -128,12 +128,39 @@ let otherAmounts = {chair: 5, table: 2};
 
 otherAmounts["desk"] = 7;
 
-console.log(otherAmounts);
+// console.log(otherAmounts);
 
 
 // # Write a method that accepts a number and returns its factorial.
 // # For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
+function factor(numbers) {
+  var number = "";
+  
+  while (number > 0) {
+    number = ((number - 1) * number);
+}
+}
+
+// console.log(5);
+
+
 
 // # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+function addArrays() {
+
+  var firstArray = [1, 5, 10];
+  var secondArray = [100, 500, 1000];
+  var thirdArray = [];
+
+  firstArray.forEach(function(first) {
+    secondArray.forEach(function(second) {
+      thirdArray.push(first + second);
+    });
+  });
+  console.log(thirdArray);
+}
+
+addArrays();
