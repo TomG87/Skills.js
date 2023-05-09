@@ -103,12 +103,21 @@ function awesomeSauce() {
   console.log(newArray);
 }
 
-awesomeSauce();
+// awesomeSauce();
 
 
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
 // # Someone just bought two chairs. Change the hash such that the chair amount is 3.
 // # The final result should be: {chair: 3, table: 2}
+
+let itemAmounts = {chair: 5, table: 2};
+
+itemAmounts["chair"] = 3;
+
+console.log(itemAmounts);
+
+
+
 
 
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
