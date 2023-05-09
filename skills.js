@@ -194,7 +194,7 @@ function everyOtherString() {
   console.log(result);
 }
 
-everyOtherString();
+// everyOtherString();
 
 
 // # Write a method that accepts one argument - an array of numbers. The method should return the greatest number. For example, if the input is [5, 4, 8, 1, 2], the output should be 8.
@@ -209,6 +209,24 @@ everyOtherString();
 //   current_max
 // end
 // p max([5, 4, 8, 1, 2])
+
+function maxNumber() {
+
+  var numbers = [5, 4, 8, 1, 2];
+  var currentMax = numbers[0];
+  
+
+  numbers.forEach(function(number) {
+    if (number > currentMax) {
+      currentMax = number;
+    }
+  });
+  console.log(currentMax);
+}
+
+maxNumber();
+
+
 
 // # Write a method that accepts a number and returns its factorial. For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
