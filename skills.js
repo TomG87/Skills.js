@@ -224,7 +224,7 @@ function maxNumber() {
   console.log(currentMax);
 }
 
-maxNumber();
+// maxNumber();
 
 
 
@@ -240,6 +240,22 @@ maxNumber();
 //   result
 // end
 // p factorial(5)
+
+
+function factorial(number) {
+  var result = 1;
+  var currentNumber = number;
+
+  for (let i = 0; i < number; i++) {
+    result = (result * currentNumber);
+    currentNumber = (currentNumber - 1);
+  }
+  return result;
+}
+
+console.log(factorial(5));
+
+
 
 // # Write a method that accepts one argument - an array of numbers that are in ascending order. The method that returns a new array with the same values in descending order. However, do not use the "reverse" method built into Ruby.
 
