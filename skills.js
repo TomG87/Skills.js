@@ -114,7 +114,7 @@ let itemAmounts = {chair: 5, table: 2};
 
 itemAmounts["chair"] = 3;
 
-console.log(itemAmounts);
+// console.log(itemAmounts);
 
 
 
@@ -123,6 +123,12 @@ console.log(itemAmounts);
 // # Start with the hash: item_amounts = {chair: 5, table: 2}
 // # You received 7 desks to sell. Change the hash to include desks.
 // # The final result should be: {chair: 5, table: 2, desk: 7}
+
+let otherAmounts = {chair: 5, table: 2};
+
+otherAmounts["desk"] = 7;
+
+console.log(otherAmounts);
 
 
 // # Write a method that accepts a number and returns its factorial.
